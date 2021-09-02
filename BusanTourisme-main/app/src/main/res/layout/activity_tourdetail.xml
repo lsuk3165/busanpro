@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    android:orientation="vertical"
+    tools:context=".view.get.Tour.TourDetailActivity">
+
+    <include layout="@layout/toolbar_main"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivImg"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tway_sky"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.064" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvAdd"
+        android:text="주소"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivFav"
+                app:srcCompat="@drawable/ic_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+            <View
+                android:layout_width="7dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/tvCountFav"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"/>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="50dp"/>
+
+            <ImageView
+                android:id="@+id/ivComment"
+                app:srcCompat="@drawable/ic_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/tvCountCom"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTraffic"
+            android:text="오는길"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"/>
+
+    <TextView
+        android:id="@+id/tvHomePage"
+        android:textColor="@color/sub_blue"
+        android:text="URL"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtnCall"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style"
+        app:icon="@drawable/ic_call"
+        app:iconGravity="textEnd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <include layout="@layout/activity_bottom"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

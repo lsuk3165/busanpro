@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/itLogin"
+        android:title="login"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/itSign"
+        android:title="sign up"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/itHeaundae"
+        android:title="해운대구"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/itJingu"
+        android:title="부산진구"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/itNamgu"
+        android:title="남구"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/itGijjang"
+        android:title="기장군"
+        app:showAsAction="never"/>
+
+</menu>
